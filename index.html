@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
 <script src="https://unpkg.com/lucide@latest" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
@@ -32,8 +33,7 @@
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#productos">Productos</a></li>
-          <li><a href="#beneficios">Beneficios</a></li>
-          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en ClothesShop.')">
@@ -76,7 +76,7 @@
 
 <!--AQUI VA AGREGAR ALGO SOBRE NOSOTROS, MISION, VISION,-->
 
-     <section id="nosotros" class="about-section">
+     <section id="about" class="about-section">
       <div class="container about-grid">
         <img
           src="img/foto3.jpg"
@@ -104,7 +104,7 @@
       </div>
 
       <!-- Acontinuacion MIS PRODUCTOS-->
-        <div class="products-grid">
+        <div class="products-grid" id="productos">
 
           <!--PRODUCTO 1- Ropa-->
 
@@ -271,6 +271,66 @@
       </div>
     </section>
 
+<!-- Dirección y contacto -->
+<section id="contacto" class="container contact-section">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">Visítanos en nuestra tienda física</h2>
+        <p class="muted-note">Ubicación y contacto</p>
+
+
+        <ul class="contact-list">
+          <li> <a href="https://maps.app.goo.gl/skXC6AdCTzyf1nhd8" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="map-pin" class="contact-icon"></i> Polanco, Miguel Hidalgo, Ciudad de México, CDMX</li>
+          <li><i data-lucide="phone" class="contact-icon"></i> (5627251766)</li>
+          <li><i data-lucide="mail" class="contact-icon"></i> info@clotheshop.com</li>
+          <li><i data-lucide="clock" class="contact-icon"></i> 10:00 AM - 8:00 PM Lunes a Viernes</li>
+        </ul>
+
+
+        <a
+          href="https://wa.me/5627251766"
+          target="_blank"
+          rel="noopener noreferrer"
+          class=whatsapp-btn
+        >
+          <i data-lucide="message-circle" class="icon-sm"></i> WhatsApp
+        </a>
+        <p class="footnote">+52 56 2725 1766</p>
+      </div>
+
+<!--Formulario de contacto -dudas -sugerencias, etc-->
+ <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" maxlength="100" />
+          <p id="error-name" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" maxlength="255" />
+          <p id="error-email" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+          <p id="error-message" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <button type="submit" class="btn btn-formulario">Enviar mensaje</button>
+
+
+        <p id="form-status" class="form-status" role="status" hidden>
+          ¡Gracias por tu mensaje nos contactaremos pronto! 
+        </p>
+      </form>
+    </section>
+
 </div>
       </section>
 
@@ -282,7 +342,7 @@
 
 
     <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="contacto">
     <div class="container footer-inner">
       <a href="#inicio" class="logo logo-light" aria-label="Sweet Space, inicio">
         
@@ -300,8 +360,9 @@
 
 
       <div class="social-links">
-        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/omar_mdna_28/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100054479001004" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@thecumix535_" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
       </div>
     </div>
 
